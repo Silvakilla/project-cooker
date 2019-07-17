@@ -1,4 +1,4 @@
-package main
+package shell
 
 import (
 	"log"
@@ -6,14 +6,14 @@ import (
 	"os/exec"
 )
 
-// ShellCommand provides a struct to do several commands in the Shell
-type ShellCommand struct {
+// Command provides a struct to do several commands in the Shell
+type Command struct {
 	name       string
 	parameters string
 }
 
 // Shell to run shell commands
-func Shell(command ShellCommand, configuration Configuration) {
+func Shell(command Command) {
 	var shell = configuration.ShellToUse
 
 	if shell == "bash" {
@@ -40,12 +40,12 @@ func Shell(command ShellCommand, configuration Configuration) {
 	}
 }
 
-func callShell(command ShellCommand, configuration Configuration) {
-	Shell(command, configuration)
+func callShell(command Command) {
+	Shell(command)
 }
 
-func multipleCallShell(commands []ShellCommand, configuration Configuration) {
+func multipleCallShell(commands []Command) {
 	for _, command := range commands {
-		Shell(command, configuration)
+		Shell(command)
 	}
 }

@@ -1,37 +1,41 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"log"
-
-	"github.com/tkanos/gonfig"
+	"project-cooker/configuration"
+	fileWriter "project-cooker/file"
 )
 
-// ProjectStructure defines the Paths to all files
-type ProjectStructure struct {
-	AiPath         string
-	AudioPath      string
-	DefaultXMLPath string
-	MapsPath       string
-	TexturesPath   string
-	UnitsPath      string
-}
+var config configuration.IConfiguration
 
-// Configuration for Installation and Initialization
-type Configuration struct {
-	ShellToUse         string
-	LogOutput          string
-	ScannedFilesOutput string
-	ProjectStructure   ProjectStructure
+func setConfig() {
+	file, readError := ioutil.ReadFile("configs/config.json")
+	config = &configuration.Configuration{}
+	readError = json.Unmarshal([]byte(file), config)
+
+	if readError != nil {
+		log.Println(readError)
+	}
 }
 
 func main() {
-	configuration := Configuration{}
-	err := gonfig.GetConf("config/config.json", &configuration)
+	setConfig()
 
-	if err != nil {
-		log.Printf("%s", err)
-	}
+	fmt.Println("Welcome to Project Cooker")
 
-	fmt.Printf("Welcome to Project Cooker")
+	log.Println(config.GetShellToUse())
+	log.Println(config.GetLogFilePath())
+	log.Println(config.GetScannedFilesPath())
+	log.Println(config.GetProjectStructure())
+	log.Println(config.GetModStructure())
+
+	fileWriter.WriteStringToFile("Configuration:")
+	//logger.WriteStringToFile(config.GetConfig().LogFilePath)
+	//logger.WriteStringToFile(configuration.IConfiguration.GetConfig().ScannedFilesPath)
+	//logger.WriteStringToFile(configuration.IConfiguration.GetConfig().ShellToUse)
+	//logger.WriteStringToFile(configuration.IConfiguration.ProjectStructureToJSON())
+
 }

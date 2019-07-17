@@ -1,0 +1,33 @@
+{
+    "projectStructure": {
+        "rootPath": "data",
+        "unitModelRootPath": "models",
+        "unitTextureRootPath": "textures",
+        "unitAudioRootPath": "audio",
+        "buildingModelRootPath": "models",
+        "buildingTextureRootPath": "textures",
+        "buildingAudioRootPath": "audio",
+        "aiScriptsRootPath": "scripts",
+        "namesRootPath": "names",
+        "textRootPath": "text",
+        "resourcesRootPath": "resources",
+        "defaultXmlPath": "xml"
+    },
+    "shellToUse": "cmd",
+    "logFilePath": "logs/cooker.log",
+    "scannedFilesPath": "logs/files.log",
+    "modStructure": {
+        "rootPath": "data",
+        "mapsPath": "art/maps",
+        "modelsPath": "art/models",
+        "texturesPath": "art/textures",
+        "shadersPath": "art/shaders",
+        "musicPath": "audio/music",
+        "sfxPath": "audio/sfx",
+        "namesPath": "names",
+        "resourcesPath": "resources",
+        "scriptsPath": "scripts",
+        "textPath": "text",        
+        "defaultXmlPath": "xml"
+    }
+}
