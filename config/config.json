@@ -1,0 +1,13 @@
+{
+    "projectStructure": {
+        "aiPath": "",
+        "audioPath": "",
+        "defaultXmlPath": "",
+        "mapsPath": "",
+        "texturesPath": "",
+        "unitsPath": ""
+    },
+    "shellToUse": "bash",
+    "logOutput": "",
+    "scannedFilesOutput": ""
+}
