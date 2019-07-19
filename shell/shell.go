@@ -4,6 +4,8 @@ import (
 	"log"
 	"os"
 	"os/exec"
+
+	"project-cooker/configuration"
 )
 
 // Command provides a struct to do several commands in the Shell
@@ -12,9 +14,11 @@ type Command struct {
 	parameters string
 }
 
+var config configuration.Configuration
+
 // Shell to run shell commands
 func Shell(command Command) {
-	var shell = configuration.ShellToUse
+	var shell = config.GetShellToUse()
 
 	if shell == "bash" {
 		cmd := exec.Command(shell, "-c", command.name+" "+command.parameters)
