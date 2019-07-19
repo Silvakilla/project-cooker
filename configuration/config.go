@@ -3,7 +3,9 @@ package configuration
 import (
 	"encoding/json"
 	"io/ioutil"
-	"log"
+
+	"project-cooker/constants"
+	fileWriter "project-cooker/file"
 )
 
 // CurrentConfig exposes the set configuration
@@ -13,36 +15,15 @@ var CurrentConfig IConfiguration
 type IConfiguration interface {
 	SetConfig()
 	GetShellToUse() string
-	GetLogFilePath() string
-	GetScannedFilesPath() string
-	GetModStructure() ModStructure
 	GetProjectStructure() ProjectStructure
+	TransformProjectStructureToJSON() string
 }
 
 // Configuration for Installation and Initialization
 type Configuration struct {
 	IConfiguration
 	ShellToUse       string
-	LogFilePath      string
-	ScannedFilesPath string
-	ModStructure     ModStructure
 	ProjectStructure ProjectStructure
-}
-
-// ModStructure defines the default paths for the mod
-type ModStructure struct {
-	RootPath       string
-	MapsPath       string
-	ModelsPath     string
-	TexturesPath   string
-	ShadersPath    string
-	MusicPath      string
-	SfxPath        string
-	NamesPath      string
-	ResourcesPath  string
-	ScriptsPath    string
-	TextPath       string
-	DefaultXMLPath string
 }
 
 // ProjectStructure defines the development paths for developing the mod
@@ -70,33 +51,29 @@ func (config Configuration) GetProjectStructure() ProjectStructure {
 	return config.ProjectStructure
 }
 
-// GetModStructure returns the default structure of the mod
-func (config Configuration) GetModStructure() ModStructure {
-	return config.ModStructure
-}
-
 // GetShellToUse returns the shell which is used for commands
 func (config Configuration) GetShellToUse() string {
 	return config.ShellToUse
 }
 
-// GetLogFilePath returns the path to the log file
-func (config Configuration) GetLogFilePath() string {
-	return config.LogFilePath
-}
+// TransformProjectStructureToJSON transforms the project structure to a printable JSON format
+func (config Configuration) TransformProjectStructureToJSON() string {
+	json, marshalError := json.Marshal(config.ProjectStructure)
 
-// GetScannedFilesPath return the path of log file for the scanned files
-func (config Configuration) GetScannedFilesPath() string {
-	return config.ScannedFilesPath
+	if marshalError != nil {
+		fileWriter.WriteStringToFile(marshalError.Error(), constants.ERROR)
+	}
+
+	return string(json)
 }
 
 // SetConfig sets or resets the configuration to what is set in the config.json
 func SetConfig() {
-	file, readError := ioutil.ReadFile("configs/config.json")
+	file, readError := ioutil.ReadFile(constants.CONFIGFILEPATH)
 	CurrentConfig = &Configuration{}
 	readError = json.Unmarshal([]byte(file), CurrentConfig)
 
 	if readError != nil {
-		log.Println(readError)
+		fileWriter.WriteStringToFile(readError.Error(), constants.ERROR)
 	}
 }

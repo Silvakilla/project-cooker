@@ -25,3 +25,85 @@ prefix2019/07/17 20:27:39 fileWriter.go:34: Test2
 2019/07/17 21:22:44 fileWriter.go:24: cmd
 2019/07/17 21:22:44 fileWriter.go:24: {"RootPath":"data","MapsPath":"","ModelsPath":"","TexturesPath":"","ShadersPath":"","MusicPath":"","SfxPath":"","NamesPath":"","ResourcesPath":"","ScriptsPath":"","TextPath":"","DefaultXMLPath":"xml"}
 2019/07/18 00:08:02 fileWriter.go:43: Configuration:
+2019/07/19 16:07:02 fileWriter.go:25: Configuration:
+2019/07/19 17:16:34 fileWriter.go:24: Configuration:
+2019/07/19 17:16:34 fileWriter.go:24: cmd
+2019/07/19 17:16:34 fileWriter.go:24: logs/cooker.log
+2019/07/19 17:16:34 fileWriter.go:24: logs/files.log
+2019/07/19 17:16:34 fileWriter.go:24: {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+2019/07/19 17:16:34 fileWriter.go:24: {"RootPath":"data","MapsPath":"art/maps","ModelsPath":"art/models","TexturesPath":"art/textures","ShadersPath":"art/shaders","MusicPath":"audio/music","SfxPath":"audio/sfx","NamesPath":"names","ResourcesPath":"resources","ScriptsPath":"scripts","TextPath":"text","DefaultXMLPath":"xml"}
+2019/07/19 17:17:06 fileWriter.go:24: Configuration:
+2019/07/19 17:17:06 fileWriter.go:24: cmd
+2019/07/19 17:17:06 fileWriter.go:24: logs/cooker.log
+2019/07/19 17:17:06 fileWriter.go:24: logs/files.log
+2019/07/19 17:17:06 fileWriter.go:24: {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+2019/07/19 17:17:06 fileWriter.go:24: {"RootPath":"data","MapsPath":"art/maps","ModelsPath":"art/models","TexturesPath":"art/textures","ShadersPath":"art/shaders","MusicPath":"audio/music","SfxPath":"audio/sfx","NamesPath":"names","ResourcesPath":"resources","ScriptsPath":"scripts","TextPath":"text","DefaultXMLPath":"xml"}
+2019/07/19 17:17:32 fileWriter.go:24: Configuration:
+2019/07/19 17:17:32 fileWriter.go:24: cmd
+2019/07/19 17:17:32 fileWriter.go:24: logs/cooker.log
+2019/07/19 17:17:32 fileWriter.go:24: logs/files.log
+2019/07/19 17:17:32 fileWriter.go:24: {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+2019/07/19 17:17:32 fileWriter.go:24: {"RootPath":"data","MapsPath":"art/maps","ModelsPath":"art/models","TexturesPath":"art/textures","ShadersPath":"art/shaders","MusicPath":"audio/music","SfxPath":"audio/sfx","NamesPath":"names","ResourcesPath":"resources","ScriptsPath":"scripts","TextPath":"text","DefaultXMLPath":"xml"}
+2019/07/19 17:17:37 Configuration:
+2019/07/19 17:17:37 cmd
+2019/07/19 17:17:37 logs/cooker.log
+2019/07/19 17:17:37 logs/files.log
+2019/07/19 17:17:37 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+2019/07/19 17:17:37 {"RootPath":"data","MapsPath":"art/maps","ModelsPath":"art/models","TexturesPath":"art/textures","ShadersPath":"art/shaders","MusicPath":"audio/music","SfxPath":"audio/sfx","NamesPath":"names","ResourcesPath":"resources","ScriptsPath":"scripts","TextPath":"text","DefaultXMLPath":"xml"}
+DEBUG 2019/07/19 17:24:02 fileWriter.go:25: Configuration:
+DEBUG 2019/07/19 17:24:02 fileWriter.go:25: cmd
+DEBUG 2019/07/19 17:24:02 fileWriter.go:25: logs/cooker.log
+DEBUG 2019/07/19 17:24:02 fileWriter.go:25: logs/files.log
+DEBUG 2019/07/19 17:24:02 fileWriter.go:25: {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+DEBUG 2019/07/19 17:24:02 fileWriter.go:25: {"RootPath":"data","MapsPath":"art/maps","ModelsPath":"art/models","TexturesPath":"art/textures","ShadersPath":"art/shaders","MusicPath":"audio/music","SfxPath":"audio/sfx","NamesPath":"names","ResourcesPath":"resources","ScriptsPath":"scripts","TextPath":"text","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:04:06 Configuration:
+INFO 2019/07/19 19:04:06 cmd
+INFO 2019/07/19 19:04:06 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:30:28 Configuration:
+INFO 2019/07/19 19:30:28 cmd
+INFO 2019/07/19 19:30:28 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:31:39 Configuration:
+INFO 2019/07/19 19:31:39 cmd
+INFO 2019/07/19 19:31:39 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:32:05 Configuration:
+INFO 2019/07/19 19:32:05 cmd
+INFO 2019/07/19 19:32:05 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:32:34 Configuration:
+INFO 2019/07/19 19:32:34 cmd
+INFO 2019/07/19 19:32:34 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:34:11 Configuration:
+INFO 2019/07/19 19:34:11 cmd
+INFO 2019/07/19 19:34:11 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:38:40 Configuration:
+INFO 2019/07/19 19:38:40 cmd
+INFO 2019/07/19 19:38:40 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:38:56 Configuration:
+INFO 2019/07/19 19:38:56 cmd
+INFO 2019/07/19 19:38:56 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:39:07 Configuration:
+INFO 2019/07/19 19:39:07 cmd
+INFO 2019/07/19 19:39:07 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:41:02 Configuration:
+INFO 2019/07/19 19:41:02 cmd
+INFO 2019/07/19 19:41:02 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:50:03 Configuration:
+INFO 2019/07/19 19:50:03 cmd
+INFO 2019/07/19 19:50:03 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 19:52:43 Configuration:
+INFO 2019/07/19 19:52:44 cmd
+INFO 2019/07/19 19:52:44 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 20:00:41 Loading Configuration...
+INFO 2019/07/19 20:00:41 cmd
+INFO 2019/07/19 20:00:41 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 20:02:04 Loading Configuration...
+INFO 2019/07/19 20:02:04 cmd
+INFO 2019/07/19 20:02:04 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 20:05:06 Loading Configuration...
+INFO 2019/07/19 20:05:06 cmd
+INFO 2019/07/19 20:05:06 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 20:05:24 Loading Configuration...
+INFO 2019/07/19 20:05:24 cmd
+INFO 2019/07/19 20:05:24 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}
+INFO 2019/07/19 20:14:48 Loading Configuration...
+INFO 2019/07/19 20:14:48 cmd
+INFO 2019/07/19 20:14:48 {"RootPath":"data","UnitModelRootPath":"models","UnitTextureRootPath":"textures","UnitAudioRootPath":"audio","BuildingModelRootPath":"models","BuildingTextureRootPath":"textures","BuildingAudioRootPath":"audio","AiScriptsRootPath":"scripts","NamesRootPath":"names","TextRootPath":"text","ResourcesRootPath":"resources","DefaultXMLPath":"xml"}

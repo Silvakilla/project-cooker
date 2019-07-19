@@ -1,8 +1,9 @@
 package file
 
-import "log"
+// ProjectFiles is an array full of all found project files
+var ProjectFiles []string
 
-// keep all known folders and files
-func createRegistry() {
-	log.Fatalln("Does not work")
+// CreateProjectRegistry creates the file registry
+func CreateProjectRegistry(projectRootpath string) {
+	ProjectFiles = ScanForFiles("./" + projectRootpath)
 }

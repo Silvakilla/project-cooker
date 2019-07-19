@@ -1,11 +1,12 @@
 package shell
 
 import (
-	"log"
 	"os"
 	"os/exec"
 
 	"project-cooker/configuration"
+	"project-cooker/constants"
+	fileWriter "project-cooker/file"
 )
 
 // Command provides a struct to do several commands in the Shell
@@ -14,11 +15,9 @@ type Command struct {
 	parameters string
 }
 
-var config configuration.Configuration
-
 // Shell to run shell commands
 func Shell(command Command) {
-	var shell = config.GetShellToUse()
+	var shell = configuration.CurrentConfig.GetShellToUse()
 
 	if shell == "bash" {
 		cmd := exec.Command(shell, "-c", command.name+" "+command.parameters)
@@ -28,7 +27,7 @@ func Shell(command Command) {
 		err := cmd.Run()
 
 		if err != nil {
-			log.Printf("%s", err)
+			fileWriter.WriteStringToFile(err.Error(), constants.ERROR)
 		}
 
 	} else if shell == "cmd" {
@@ -39,16 +38,20 @@ func Shell(command Command) {
 		err := cmd.Run()
 
 		if err != nil {
-			log.Printf("%s", err)
+			fileWriter.WriteStringToFile(err.Error(), constants.ERROR)
 		}
+	} else {
+		fileWriter.WriteStringToFile("No Shell found to use", constants.ERROR)
 	}
 }
 
-func callShell(command Command) {
+// CallShell with only command to execute
+func CallShell(command Command) {
 	Shell(command)
 }
 
-func multipleCallShell(commands []Command) {
+// MultiCallShell with several commands to execute
+func MultiCallShell(commands []Command) {
 	for _, command := range commands {
 		Shell(command)
 	}
